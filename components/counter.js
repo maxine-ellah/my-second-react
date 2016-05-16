@@ -8,7 +8,7 @@ class Counter extends Component {
   }
 
   render () {
-    return <h3 onClick={()=>{count: this.setState(this.state.count + 1)}} >How many hellos? {this.props.count}</h3>
+    return <h3 onClick={ ()=> this.setState({ count: this.state.count + 1 }) } >How many hellos? {this.state.count}</h3>
   }
 
 }
